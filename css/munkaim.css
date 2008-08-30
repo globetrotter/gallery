@@ -1,0 +1,70 @@
+div.scrollbar {
+	position: relative;
+	color: #000;
+	background: inherit;
+	width: 540px;
+	height: 350px;
+	overflow: auto;
+}
+
+.thumbnail {
+	margin-right: 15px; position : relative;
+	z-index: 0;
+	position: relative;
+}
+
+.thumbnail:hover {
+	background-color: transparent;
+	z-index: 50;
+}
+
+.thumbnail span { /*CSS for enlarged image*/
+	position: absolute;
+	background-color: lightyellow;
+	padding: 5px;
+	left: -1000px;
+	border: 1px dashed gray;
+	visibility: hidden;
+	color: black;
+	text-decoration: none;
+}
+
+.thumbnail span img { /*CSS for enlarged image*/
+	border-width: 0;
+	padding: 2px;
+}
+
+.thumbnail:hover span { /*CSS for enlarged image on hover*/
+	position: fixed;
+	visibility: visible;
+	top: 27%;
+	left: 40%;
+	/*position where enlarged image should offset horizontally */
+}
+
+<![if !IE 6]>
+
+.shiftcontainer {
+	position: relative;
+	left: 5px; /*Number should match -left shadow depth below*/
+	top: 5px; /*Number should match -top shadow depth below*/
+}
+
+.shadowcontainer {
+	width: 170px; /* container width*/
+	background-color: brown;
+}
+
+.shadowcontainer .innerdiv { /* Add container height here if desired */
+	background-color: lightyellow;
+	border: 1px solid gray;
+	padding: 6px;
+	position: relative;
+	left: -5px; /*shadow depth*/
+	top: -5px; /*shadow depth*/
+}
+<!
+[
+endif
+]
+>

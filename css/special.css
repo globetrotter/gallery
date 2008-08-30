@@ -1,0 +1,45 @@
+    #filterdoboz h4 {
+        margin-left: 20%;
+        font-size: 45px;
+        font-family: Lucida Calligraphy;
+        color:darkred;
+    }
+
+	#filterdoboz li {
+        margin-left: 30%;
+        padding-bottom: 10px;
+        font-size: 35px;
+        font-family: Lucida Calligraphy;
+        color:darkred;
+    }
+
+	#filterdoboz p {
+        margin-left: 30%;
+        padding-bottom: 10px;
+        font-size: 45px;
+        font-family: Lucida Calligraphy;
+        color:darkred;
+    }
+
+	#filterdoboz a {
+	  display:block;
+	  color:darkred;
+	  text-decoration:none;
+	  background:transparent;
+	  overflow:hidden;
+	  z-index:10;
+	  }
+
+	#filterdoboz a:visited {
+		color: yellow;
+	}
+
+	#filterdoboz a:hover {
+		color: darkred;
+		font-size: 40px;
+		text-decoration: none;
+	}
+
+	a:active {
+		color: #E50030;
+	}
